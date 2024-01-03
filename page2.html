@@ -8,24 +8,11 @@
       text-align: center;
     }
 
-    button {
-      padding: 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 10px;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
     .product-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
     }
 
     .product {
@@ -36,6 +23,21 @@
       width: 200px; /* Adjust the width as needed */
       margin-top: 20px;
     }
+
+    button {
+      padding: 20px;
+      background-color: #FF0000; /* Red background color */
+      color: white;
+      border: 2px solid #000000; /* Black border */
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #CC0000; /* Darker red on hover */
+    }
   </style>
 </head>
 
@@ -44,13 +46,13 @@
 
   <div class="product-container">
     <div class="product">
-      <button onclick="window.location.href='product.html'">View Product</button>
       <img src="https://thumbs.dreamstime.com/z/yellow-jacket-wasp-14168674.jpg?ct=jpeg" alt="Product Image">
+      <button onclick="window.location.href='product.html'">View Product</button>
     </div>
 
     <div class="product">
-      <button onclick="window.location.href='product2.html'">View Product 2</button>
       <img src="https://m2.bargainmax.co.uk/media/catalog/product/cache/98f2d9312fcbfb88690d91bfd6521157/t/u/tumbnail_46f96924-67b0-444a-98cc-e1cf5805f447.jpg" alt="Product 2 Image">
+      <button onclick="window.location.href='product2.html'">View Product 2</button>
     </div>
   </div>
 
