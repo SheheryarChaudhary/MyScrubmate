@@ -23,6 +23,15 @@
       background-color: #45a049;
     }
 
+    .product-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .product {
+      margin: 20px;
+    }
+
     img {
       width: 200px; /* Adjust the width as needed */
       margin-top: 20px;
@@ -33,9 +42,17 @@
 <body>
   <h1>Welcome to the Shop!</h1>
 
-  <button onclick="window.location.href='product.html'">View Product</button>
+  <div class="product-container">
+    <div class="product">
+      <button onclick="window.location.href='product.html'">View Product</button>
+      <img src="https://thumbs.dreamstime.com/z/yellow-jacket-wasp-14168674.jpg?ct=jpeg" alt="Product Image">
+    </div>
 
-  <img src="https://thumbs.dreamstime.com/z/yellow-jacket-wasp-14168674.jpg?ct=jpeg" alt="Product Image">
+    <div class="product">
+      <button onclick="window.location.href='product2.html'">View Product 2</button>
+      <img src="https://m2.bargainmax.co.uk/media/catalog/product/cache/98f2d9312fcbfb88690d91bfd6521157/t/u/tumbnail_46f96924-67b0-444a-98cc-e1cf5805f447.jpg" alt="Product 2 Image">
+    </div>
+  </div>
 
 </body>
 
