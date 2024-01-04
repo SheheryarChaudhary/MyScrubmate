@@ -3,7 +3,7 @@
 
 <head>
   <title>Product Page</title>
-  <style> 
+  <style>
     body {
       text-align: center;
       margin: 0;
@@ -38,9 +38,11 @@
     }
 
     .not-for-sale {
-      font-size: 24px;
+      font-size: 48px; /* Adjusted font size */
       margin-top: 20px;
       color: #FF0000; /* Red text color */
+      font-weight: bold; /* Bold text */
+      text-decoration: underline; /* Underlined text */
     }
   </style>
 </head>
@@ -49,8 +51,7 @@
   <img src="https://example.com/placeholder-image.jpg" alt="Product Image">
   <br>
   <button class="back-button" onclick="window.location.href='page2.html'">Back</button>
-  <div class="not-for-sale">This is NOT for sale!!</div>
+  <div class="not-for-sale">This is <br> NOT for sale!!</div>
 </body>
 
 </html>
-
