@@ -1,1 +1,75 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product 3 Page</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: white;
+    }
+
+    .sale-message {
+      font-size: 24px;
+      color: #FF0000; /* Red text color */
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 10px;
+      margin-top: 10px;
+      width: 300px; /* Adjust the width as needed */
+    }
+
+    button {
+      padding: 20px;
+      background-color: #FF0000; /* Red background color */
+      color: white;
+      border: 2px solid #000000; /* Black border */
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #CC0000; /* Darker red on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sale-message">90% off Winter Sale!!</div>
+  <form>
+    <label for="fullName">Full Name:</label>
+    <br>
+    <input type="text" id="fullName" name="fullName" required>
+    <br>
+    <label for="postalCode">Postal Code:</label>
+    <br>
+    <input type="text" id="postalCode" name="postalCode" required>
+    <br>
+    <label for="fullAddress">Full Address:</label>
+    <br>
+    <input type="text" id="fullAddress" name="fullAddress" required>
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <button onclick="purchase()">Purchase for £989.99</button>
+  </form>
+
+  <script>
+    function purchase() {
+      // Add logic for purchase here
+      alert("Purchase successful!"); // Example alert, replace with actual logic
+    }
+  </script>
+</body>
+
+</html>
